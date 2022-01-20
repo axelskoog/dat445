@@ -1,0 +1,1 @@
+Implement the function `skip` which given a number n and a list returns a new list with every n-th element in the original list. For example, `skip(2, ['A','B','C','D','E'])` should return `['A','C','E']`.
