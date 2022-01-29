@@ -16,19 +16,19 @@ Here, after the import, we first assign to x the value 1/3 which in Python is wr
 
 Fraction in Python is actually a class. When you say Fraction(1,2) this calls the constructor of the class which stores the numbers 1 and 2 to two attributes. Whenever we use an operator like *, +, /, etc., Python actually calls a method. Here is a list of operators and their corresponding methods:
 
-| Operator | Method      |
-|----------|-------------|
-| +        | __add__     |
-| -        | __neg__     |
-| -        | __sub__     |
-| *        | __mul__     |
-| /        | __truediv__ |
-| <        | __lt__      |
-| <=       | __le__      |
-| ==       | __eq__      |
-| !=       | __ne__      |
-| >        | __gt__      |
-| >=       | __ge__      |
+| Operator | Method          |
+|----------|-----------------|
+| +        | \_\_add\_\_     |
+| -        | \_\_neg\_\_     |
+| -        | \_\_sub\_\_     |
+| *        | \_\_mul\_\_     |
+| /        | \_\_truediv\_\_ |
+| <        | \_\_lt\_\_      |
+| <=       | \_\_le\_\_      |
+| ==       | \_\_eq\_\_      |
+| !=       | \_\_ne\_\_      |
+| >        | \_\_gt\_\_      |
+| >=       | \_\_ge\_\_      |
 
 When you type an expression in the Python shell, the result can be an object of an arbitary type. In order to show the result, Python calls the method `__repr__` from that object, which can be redefined to provide a user friendly representation. That is how Python knows that fractions should be printed as `Fraction(5, 6)`.
 
