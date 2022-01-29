@@ -50,9 +50,9 @@ Here is a list of the self-practice exercises for the course DAT445, VT22:
 * Exercise 5
   * [Counters](./Uppgifter/Exercise_5/1_Counters.md)
 * Lecture 12
-  * combinations
-  * gcd
-  * binarySearch
+  * [combinations](./Uppgifter/Lecture_12/1_combinations.md)
+  * [gcd](./Uppgifter/Lecture_12/2_gcd.md)
+  * [binarySearch](./Uppgifter/Lecture_12/3_binarySearch.md)
 * Exam Preparation 1
   * movieTickets (exam)
   * pepLineLength (exam)
