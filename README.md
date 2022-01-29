@@ -62,6 +62,6 @@ Here is a list of the self-practice exercises for the course DAT445, VT22:
   * [div9 (exam)](./Uppgifter/Exam_Prep_2/2_div9.md)
   * [StatSet (exam)](./Uppgifter/Exam_Prep_2/3_StatSet.md)
 * Exam Preparation 3
-  * calculate_loan (exam)
-  * code_words (exam)
-  * Robot (exam)
+  * [calculate_loan (exam)](./Uppgifter/Exam_Prep_3/1_calculate_loan.md)
+  * [code_words (exam)](./Uppgifter/Exam_Prep_3/2_code_words.md)
+  * [Robot (exam)](./Uppgifter/Exam_Prep_3/3_Robot.md)

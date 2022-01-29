@@ -6,8 +6,8 @@ Create a class called `StatSet` that can be used to do simple statistical calcul
 * `median(self)`: Returns the median, i.e. the average of the minimum and the maximum value in the set.
 * `stdDev2(self)`: Returns the squared standard deviation of the numbers in the `StatSet`, computed according to the formula:
 
-  <img src="./3_StatSet.dark.svg#gh-dark-mode-only" alt="Standard Deviation"/>
-  <img src="./3_StatSet.light.svg#gh-light-mode-only" alt="Standard Deviation"/>
+  <img src="./3_StatSet.dark.svg#gh-dark-mode-only" alt="Standard Deviation" width="250pt" />
+  <img src="./3_StatSet.light.svg#gh-light-mode-only" alt="Standard Deviation" width="250pt" />
 
 * `count(self)`: Returns the count of numbers in the set.
 * `min(self)`: Returns the smallest number in the set.
