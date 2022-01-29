@@ -44,9 +44,10 @@ Your tasks are:
    * The `__init__` method takes a third parameter: next, which is a reference to another counter.
    * The `count` function also works differently  –  when the counter turns from max back to zero, it must also call `next.count()`.
 
-       The new `ChainedCounter` can be used to implement a digital clock. When the counter for seconds is 59, it is then reset back to zero, and at the same time the counter for minutes is increased with one. You have to check that next is not `None` before trying to call `next.count()`. The reason is that a chain of counters has to end. For instance, in a clock the counter for hours has no next counter, so it must be constructed with `None` as the third parameter. Once the class is finished the clock bellow will start working *(will not work here on github)*.
+       The new `ChainedCounter` can be used to implement a digital clock. When the counter for seconds is 59, it is then reset back to zero, and at the same time the counter for minutes is increased with one. You have to check that next is not `None` before trying to call `next.count()`. The reason is that a chain of counters has to end. For instance, in a clock the counter for hours has no next counter, so it must be constructed with `None` as the third parameter. Once the class is finished the clock below will start working *(will not work here on github)*.
 
        <table><tbody><tr><td>00</td><td>01</td><td>02</td></tr></tbody></table>
+
 
 
 ```python

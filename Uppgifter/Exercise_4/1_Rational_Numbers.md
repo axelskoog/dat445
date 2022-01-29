@@ -12,9 +12,9 @@ Fraction(2, 3)
 Fraction(5, 6)
 ```
 
-Here, after the import, we first assign to x the value 1/3 which in Python is written as Fraction(1,3). After that we print the result of 2*x which is equal to 2/3. Finally we assign to y the value 1/2 and we print the result of x+y which is 5/6.
+Here, after the import, we first assign to x the value 1/3 which in Python is written as Fraction(1,3). After that we print the result of 2\*x which is equal to 2/3. Finally we assign to y the value 1/2 and we print the result of x+y which is 5/6.
 
-Fraction in Python is actually a class. When you say Fraction(1,2) this calls the constructor of the class which stores the numbers 1 and 2 to two attributes. Whenever we use an operator like *, +, /, etc., Python actually calls a method. Here is a list of operators and their corresponding methods:
+Fraction in Python is actually a class. When you say Fraction(1,2) this calls the constructor of the class which stores the numbers 1 and 2 to two attributes. Whenever we use an operator like \*, +, /, etc., Python actually calls a method. Here is a list of operators and their corresponding methods:
 
 | Operator | Method          |
 |----------|-----------------|
@@ -39,7 +39,9 @@ This replacement of operators with method calls lets us to redefine what differe
   >>> math.gcd(6,10)
   2
   ```
-  Now if we divide both the nominator and the denominator, we get `(6/2)/(10/2)` => `3/5`.
+
+    Now if we divide both the nominator and the denominator, we get `(6/2)/(10/2)` => `3/5`.
+
 * a method `__repr__` for conversion to a string. The method should return a string composed of the class name and the nominator and the denominator.
 * a method `__add__` for adding two rationals.
 * a method `__mul__` for multiplying two rationals.

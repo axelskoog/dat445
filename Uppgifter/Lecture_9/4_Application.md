@@ -1,4 +1,4 @@
-One public school every year receives applications for new students. Each application is sent through a web site and the relevant information is packaged in an instance of the class `Application` shown bellow.
+One public school every year receives applications for new students. Each application is sent through a web site and the relevant information is packaged in an instance of the class `Application` shown below.
 
 The number of students that will be accepted is always fixed in advance and the students are accepted in the order in which they have sent their applications. Moreover only applications from students who live at most five kilometers from the schools are considered.
 

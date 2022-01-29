@@ -15,5 +15,4 @@ Every time when we throw a dice we get a random number from 1 to 6. A fair dice 
   ```python
       def isFair(self,epsilon): ...
   ```
-
-A dice is fair if the frequencies for each outcome is in the range 1/6 ± epsilon. The method should return True/False depending on whether the dice is fair.
+  A dice is fair if the frequencies for each outcome is in the range 1/6 ± epsilon. The method should return True/False depending on whether the dice is fair.
