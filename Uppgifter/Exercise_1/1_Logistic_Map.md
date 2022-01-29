@@ -3,9 +3,9 @@ The logistic map is a function from a real number in the range [0; 1] to another
 ![logmap](./1_Logistic_Map.dark.svg#gh-dark-mode-only)
 ![logmap](./1_Logistic_Map.light.svg#gh-light-mode-only)
 
-and an initial number, we can generate a sequence of numbers. Here 0 < r <= 4 is a fixed parameter. For example, if r=3.9, and we start with the number 0.2, then the next number will be 3.9*0.2*(1-0.2) == 0.624. We can repeat the mapping and get a sequence:
+and an initial number, we can generate a sequence of numbers. Here 0 < r <= 4 is a fixed parameter. For example, if r=3.9, and we start with the number 0.2, then the next number will be 3.9\*0.2\*(1-0.2) == 0.624. We can repeat the mapping and get a sequence:
 
-0.2 0.624 0.915 0.303 0.824 ...
+0.2, 0.624, 0.915, 0.303, 0.824 ...
 
 The [logistic map](https://en.wikipedia.org/wiki/Logistic_map) was first popularized in a 1976 paper by [Robert May](https://en.wikipedia.org/wiki/Robert_May,_Baron_May_of_Oxford) for modelling the size of a population of rabbits. It is interesting because it can exhibit both simple periodic behaviour as well as complex chaotic behaviour.
 
@@ -14,6 +14,7 @@ Your task is to implement three functions which make it possible to experiment w
 1. a function `logmap(r, x)` which takes the value of r and the current x and returns the next number in the sequence.
 2. a function `experiment(r, x, n)` which also takes r and x but also the parameter n which indicates how many numbers it should compute. Unlike `logmap`, the new function should not return the numbers, but print them directly on the screen. Here is an example print out from the function:
 
+       ```python console
        >>> experiment(3.9,0.2,10)
        0.2
        0.6240000000000001
@@ -25,9 +26,11 @@ Your task is to implement three functions which make it possible to experiment w
        0.1562578420270518
        0.5141811824451928
        0.9742156868513789
+       ```
 
-   and another example:
+       and another example:
 
+       ```python console
        >>> experiment(3.9,0.21,10)
        0.21
        0.64701
@@ -39,11 +42,13 @@ Your task is to implement three functions which make it possible to experiment w
        0.6093915569306115
        0.9283306003619574
        0.2594782974949042
+       ```
 
-   Notice that above we started with two very similar initial values 0.2 and 0.21, but the rest of the sequence quickly becomes very different. This is a typical deterministic but chaotic behaviour.
+       Notice that above we started with two very similar initial values 0.2 and 0.21, but the rest of the sequence quickly becomes very different. This is a typical deterministic but chaotic behaviour.
 
 3. Implement a third function `table(r, x1, x2, n)` which prints two sequences side by side, starting from two different start values x1 and x2. Example:
 
+       ```python console
        >>> table(3.9,0.20,0.21,10)
        0.2 0.21
        0.6240000000000001 0.64701
@@ -55,3 +60,4 @@ Your task is to implement three functions which make it possible to experiment w
        0.1562578420270518 0.6093915569306115
        0.5141811824451928 0.9283306003619574
        0.9742156868513789 0.2594782974949042
+       ```
