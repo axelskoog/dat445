@@ -1,11 +1,11 @@
 In this exercise we play with counter classes which model the physical devices that people use for counting things:
 
 <table>
-  <thead>
+  <tbody>
     <tr>
-      <th><img src="./1_Counters.counter.png" align="left" height="115px" /></th>
-      <th><strong>&nbsp;&nbsp;🠒&nbsp;&nbsp;</strong></th>
-      <th>
+      <td><img src="./1_Counters.counter.png" align="left" height="115px" /></th>
+      <td><strong>&nbsp;&nbsp;🠒&nbsp;&nbsp;</strong></th>
+      <td>
         <table>
           <tbody>
             <tr>
@@ -17,8 +17,9 @@ In this exercise we play with counter classes which model the physical devices t
             </tr>
           </tbody>
         </table>
+      </td>
     </tr>
-  </thead>
+  </tbody>
 </table>
 
 The skeleton of the classes is given below, you just need to fill in the methods. Note that the different classes inherit each other. When working on a subclass try not to repeat code. Instead use the keyword super to reuse the method in the superclass.
