@@ -1,7 +1,7 @@
 Given the class `User`, add the class `WebLogin` which controlls user passwords for a web site. It must have the following components:
 
 * One or more instance variables to keep track of which users are registered on the web site.
-* An __init__ method which initializes the instance variables.
+* An `__init__` method which initializes the instance variables.
 * A method for registering new users:
   ```python
       def addUser(self, name, password, email): ...
