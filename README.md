@@ -54,9 +54,9 @@ Here is a list of the self-practice exercises for the course DAT445, VT22:
   * [gcd](./Uppgifter/Lecture_12/2_gcd.md)
   * [binarySearch](./Uppgifter/Lecture_12/3_binarySearch.md)
 * Exam Preparation 1
-  * movieTickets (exam)
-  * pepLineLength (exam)
-  * Card (exam)
+  * [movieTickets (exam)](./Uppgifter/Exam_Prep_1/1_movieTickets.md)
+  * [pepLineLength (exam)](./Uppgifter/Exam_Prep_1/2_pepLineLength.md)
+  * [Card (exam)](./Uppgifter/Exam_Prep_1/3_Card.md)
 * Exam Preparation 2
   * pandemic_rules (exam)
   * div9 (exam)
