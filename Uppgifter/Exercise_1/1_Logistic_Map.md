@@ -1,7 +1,6 @@
 The logistic map is a function from a real number in the range [0; 1] to another number in the same range. Using the map:
 
-![logmap](./1_Logistic_Map.dark.svg#gh-dark-mode-only)
-![logmap](./1_Logistic_Map.light.svg#gh-light-mode-only)
+![formula](https://render.githubusercontent.com/render/math?mode=inline&math=x_%7Bn%2B1%7D%3Drx_n\left(1-x_n\right))
 
 and an initial number, we can generate a sequence of numbers. Here 0 < r <= 4 is a fixed parameter. For example, if r=3.9, and we start with the number 0.2, then the next number will be 3.9\*0.2\*(1-0.2) == 0.624. We can repeat the mapping and get a sequence:
 
