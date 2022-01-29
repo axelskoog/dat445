@@ -1,6 +1,6 @@
 In this exercise we play with counter classes which model the physical devices that people use for counting things:
 
-<img src="./1_Counters.counter.png" align="left" height="115px" /><p align="right"><table><tbody><tr><td colspan="2">9999</td></tr><tr><td><button>Count</button></td><td><button>Reset</button></td></tr></tbody></table></p>
+<img src="./1_Counters.counter.png" align="left" height="115px" /><p><table><tbody><tr><td colspan="2">9999</td></tr><tr><td><button>Count</button></td><td><button>Reset</button></td></tr></tbody></table></p><br clear="left" />
 
 The skeleton of the classes is given below, you just need to fill in the methods. Note that the different classes inherit each other. When working on a subclass try not to repeat code. Instead use the keyword super to reuse the method in the superclass.
 
