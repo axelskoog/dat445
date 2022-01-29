@@ -17,3 +17,15 @@ Given the class `User`, add the class `WebLogin` which controlls user passwords 
       def sendPassword(self, name): ...
   ```
   If there is a user with the given name then the method should call the method `sendMessage` from `User` with the message `"Your password is: 123"` where instead of 123 your should place the real password.
+
+```python
+class User:
+  def __init__(self, name, password, email):
+    self.name = name
+    self.password = password
+    self.email = email
+  def getName(self): return self.name
+  def getPassword(self): return self.password
+  def sendMessage(self,message): print(message,"sent to",self.email)
+
+```
