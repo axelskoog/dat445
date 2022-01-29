@@ -58,9 +58,9 @@ Here is a list of the self-practice exercises for the course DAT445, VT22:
   * [pepLineLength (exam)](./Uppgifter/Exam_Prep_1/2_pepLineLength.md)
   * [Card (exam)](./Uppgifter/Exam_Prep_1/3_Card.md)
 * Exam Preparation 2
-  * pandemic_rules (exam)
-  * div9 (exam)
-  * StatSet (exam)
+  * [pandemic_rules (exam)](./Uppgifter/Exam_Prep_2/1_pandemic_rules.md)
+  * [div9 (exam)](./Uppgifter/Exam_Prep_2/2_div9.md)
+  * [StatSet (exam)](./Uppgifter/Exam_Prep_2/3_StatSet.md)
 * Exam Preparation 3
   * calculate_loan (exam)
   * code_words (exam)
