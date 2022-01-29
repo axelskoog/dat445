@@ -5,19 +5,26 @@ The number of students that will be accepted is always fixed in advance and the 
 Add the class `ApplicationList` which collects the applications. The class should contain the following components:
 
 * An `__init__` method:
+
   ```python
       def __init__(self, nrOfStudents): ...
   ```
-  where `nrOfStudents` is the number of students that will be accepted this year.
+
+    where `nrOfStudents` is the number of students that will be accepted this year.
+
 * A method which adds a new application:
+
   ```python
       def addApplication(self, app): ...
   ```
+
 * A method which prints the list of students that were accepted:
+
   ```python
       def printAccepted(self): ...
   ```
-  Each student should be printed with its name and personal number.
+    Each student should be printed with its name and personal number.
+
 
 ```python
 class Application:
