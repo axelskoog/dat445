@@ -40,10 +40,10 @@ def main(argc: int, argv: list):
     if "http" in argv[1]:
         with requests.Session().get(argv[1], headers=None, stream=True) as resp:
             r = resp.iter_lines(decode_unicode=True)
-            wf.countWords(frequencies, wf.tokenize(r), stopwords)
+            wf.s_countWords(frequencies, wf.s_tokenize(r), stopwords)
     else:
-        with open(argv[1], 'r', encoding="utf-8") as f:
-            wf.countWords(frequencies, wf.tokenize(f), stopwords)
+        with open(argv[1], 'r', encoding="utf-8", errors='ignore') as f:
+            wf.s_countWords(frequencies, wf.s_tokenize(f), stopwords)
 
     wf.printTopMost(frequencies, limit)
     return EXIT_SUCCESS
@@ -56,3 +56,5 @@ if __name__ == "__main__":
     except Exception as err:
         print(err)
         _exit(EXIT_FAILURE)
+
+
