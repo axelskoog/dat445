@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 import sys
-import errno
 import requests
 
-from os import _exit, strerror, EX_OSERR as EXIT_FAILURE, EX_OK as EXIT_SUCCESS
+from os import _exit, EX_OSERR as EXIT_FAILURE, EX_OK as EXIT_SUCCESS
 
 sys.dont_write_bytecode = True
 
