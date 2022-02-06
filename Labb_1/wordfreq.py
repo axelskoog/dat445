@@ -1,8 +1,14 @@
-from typing import Iterable, Iterator, Generator
+
+# !DISCLAIMER!
+# Do NOT submit this code as your own. Submissions will be tested for
+# plagiarism, and if you are deemed guilty of it, your ability to pass
+# this course will be dire.
+
+from typing import Iterable, Generator
 import re
 
+rex = re.compile('[A-Za-z]+|[0-9]+|[^A-Za-z0-9\\s]')
 
-rex = re.compile('(?:[A-Za-z]+)|(?:[0-9]+)|(?:[^A-Za-z0-9\\s])')
 
 # "s_" -> streaming
 
@@ -27,9 +33,9 @@ def printTopMost(freq: dict[str, int], n: int) -> None:
         print("{:<20}{:5}".format(word, freq), sep='')
 
 
-##
-## definitions for test.py
-##
+#
+# definitions for test.py
+#
 
 def tokenize(lines: Iterable[str]) -> list[str]:
     return [t for t in s_tokenize(lines)]
@@ -40,5 +46,3 @@ def countWords(t: Iterable[str], stop: list) -> None:
     s = {w: True for w in stop}
     s_countWords(d, t, s)
     return d
-
-

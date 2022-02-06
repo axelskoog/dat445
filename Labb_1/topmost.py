@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# !DISCLAIMER!
+# Do NOT submit this code as your own. Submissions will be tested for
+# plagiarism, and if you are deemed guilty of it, your ability to pass
+# this course will be dire.
+
 import sys
 import requests
 
@@ -11,7 +16,7 @@ import wordfreq as wf  # noqa: E402
 
 
 def usage(arg0) -> int:
-    print(f'Usage: {arg0} <stopfile> <file/url> <limit>')
+    print(f'Usage: {arg0} <stopfile> <document/url> <integer>')
     return EXIT_FAILURE
 
 
@@ -37,8 +42,8 @@ def main(argc: int, argv: list):
         stopwords = {line.strip(): True for line in f}
 
     if "http" in argv[1]:
-        with requests.Session().get(argv[1], headers=None, stream=True) as resp:
-            r = resp.iter_lines(decode_unicode=True)
+        with requests.Session().get(argv[1], headers=None, stream=True) as rb:
+            r = rb.iter_lines(decode_unicode=True)
             wf.s_countWords(frequencies, wf.s_tokenize(r), stopwords)
     else:
         with open(argv[1], 'r', encoding="utf-8", errors='ignore') as f:
@@ -55,5 +60,3 @@ if __name__ == "__main__":
     except Exception as err:
         print(err)
         _exit(EXIT_FAILURE)
-
-
