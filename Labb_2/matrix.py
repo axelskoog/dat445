@@ -84,3 +84,15 @@ def invert(M: list[list]) -> list[list]:
 def loadtxt(filename: str) -> list[list]:
     with open(filename, 'r', encoding='utf-8') as f:
         return [[float(n) for n in line.split()] for line in f]
+
+
+def linspace(start, stop, n):
+    match n:
+        case _ if n < 1:
+            return []
+        case _ if n == 1:
+            return [stop]
+        case _:
+            h=(stop-start)/(n-1)
+            return [stop] if n == 1 else [start+h*i for i in range(n)]
+
