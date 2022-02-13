@@ -87,12 +87,8 @@ def loadtxt(filename: str) -> list[list]:
 
 
 def linspace(start, stop, n):
-    match n:
-        case _ if n < 1:
-            return []
-        case _ if n == 1:
-            return [stop]
-        case _:
-            h=(stop-start)/(n-1)
-            return [stop] if n == 1 else [start+h*i for i in range(n)]
+    if n < 1:
+        return []
+    h=(stop-start)/(n-1)
+    return [stop] if n == 1 else [start+h*i for i in range(n)]
 
