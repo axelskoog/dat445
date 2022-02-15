@@ -39,7 +39,7 @@ def det(a: list[list]) -> Union[int, float]:
         case m, n if m != n:
             raise ValueError("m != n")
         case 1, 1:
-            return a[0][0]  # base case for 1x1 matrix
+            return a[0][0]
         case 2, 2:
             return a[0][0] * a[1][1] - a[0][1] * a[1][0]  # base case for 2x2
         case _:
@@ -48,8 +48,8 @@ def det(a: list[list]) -> Union[int, float]:
 
 
 def eye(n: int) -> list[list]:
-    dim = range(n)
-    return [[int(i == j) for i in dim] for j in dim]
+    ij = range(n)
+    return [[int(i == j) for i in ij] for j in ij]
 
 
 def cofactor(m: list[list]) -> list[list]:
@@ -91,4 +91,3 @@ def linspace(start, stop, n):
         return []
     h=(stop-start)/(n-1)
     return [stop] if n == 1 else [start+h*i for i in range(n)]
-
