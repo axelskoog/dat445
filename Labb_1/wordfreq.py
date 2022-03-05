@@ -1,8 +1,8 @@
 
 # !DISCLAIMER!
-# Do NOT submit this code as your own. Submissions will be tested for
-# plagiarism, and if you are deemed guilty of it, your ability to pass
-# this course will be dire.
+# Do NOT submit this code as your own.
+# Submissions will be checked for plagiarism.
+# Offenders will not be able to pass the course.
 
 from typing import Iterable, Generator
 import re
