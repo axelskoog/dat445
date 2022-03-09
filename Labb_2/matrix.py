@@ -29,22 +29,22 @@ def dot(v1: list, v2: list) -> Union[int, float]:
 
 
 def minor(m: list[list], i: int, j: int) -> list[list]:
-    return [[e for e in r if e is not r[j]] for r in m if r is not m[i]]
+    return [[e for y,e in enumerate(r) if y != j] for x,r in enumerate(m) if x != i]
 
 
 def det(a: list[list]) -> Union[int, float]:
-    match len(a), (len(a[0]) if len(a) else 0):
-        case m, n if m == 0 or n == 0:
-            raise ValueError("dim(a) == 0")
-        case m, n if m != n:
-            raise ValueError("m != n")
-        case 1, 1:
-            return a[0][0]
-        case 2, 2:
-            return a[0][0] * a[1][1] - a[0][1] * a[1][0]  # base case for 2x2
-        case _:
-            r = range(0, len(a[0]))
-            return sum([((-1)**i) * a[0][i] * det(minor(a, 0, i)) for i in r])
+    m = len(a)
+    n = len(a[0]) if a else 0
+    if m == 0 or n == 0:
+        raise ValueError("dim(a) == 0")
+    if m != n:
+        raise ValueError("m != n")
+    if n == 1:
+        return a[0][0]
+    if n == 2:
+        return a[0][0] * a[1][1] - a[0][1] * a[1][0]
+    r = range(m)
+    return sum([((-1)**i) * a[0][i] * det(minor(a, 0, i)) for i in r])
 
 
 def eye(n: int) -> list[list]:
